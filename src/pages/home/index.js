@@ -14,8 +14,8 @@ export default function Home() {
       <Background />
       <Partners />
       <Services />
-     <Desking />
-          <NumbersOf />
+      <Desking />
+      <NumbersOf />
       <Customer />
       <KompassIntegration />
       <Newsletter />
