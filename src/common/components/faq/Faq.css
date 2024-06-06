@@ -20,6 +20,11 @@
   font-weight: 600;
 }
 
+@media (max-width: 425px) {
+  .faqs .faq .faq-question {
+    font-size: 16px;
+  }
+}
 .faqs .faq .faq-question::after {
   content: "+";
   position: absolute;
@@ -41,6 +46,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+@media (max-width: 425px) {
+  .faqs .faq .faq-answer{
+    font-size: 14px;
+  }
+}
+
 
 .faqs .faq.open .faq-question {
   margin-bottom: 15px;

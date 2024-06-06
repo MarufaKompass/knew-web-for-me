@@ -19,9 +19,9 @@ export default function About() {
               <AboutText></AboutText>
               <AboutUs></AboutUs>
               <Teams></Teams>
-              {/* <Values></Values>
-               <JoinTeam></JoinTeam>
-               <FQA></FQA> */}
+             <Values></Values>
+              <JoinTeam></JoinTeam>
+                 <FQA></FQA>
             </div>
           </div>
         </div>
