@@ -1,0 +1,19 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnused": [
+    "@testing-library/react",
+    "react-daisyui",
+    "react-scripts",
+    "source-map-explorer"
+  ],
+  "ignoreUnimported": [
+    "src/common/components/faq/Faq.jsx",
+    "src/common/components/faq/FaqData.jsx",
+    "src/common/components/layout/index.js",
+    "src/common/components/svg/store/PayrollIcon.jsx",
+    "src/common/components/svg/store/RightArrow.jsx",
+    "src/pages/home/Team.jsx",
+    "src/pages/solutions/index.jsx",
+    "src/setupTests.js"
+  ]
+}
