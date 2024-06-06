@@ -23,31 +23,31 @@ const teamMembersData = [
     name: "AKM Ahsanul Hoque",
     role: "Co-founder & COO",
     backgroundImage: backgroundOne,
-    bgImages: " w-[338px] h-[236px]",
+    bgImages: " xl:w-[338px] xl:h-[236px]  w-[280px] h-[180px]  ",
   },
   {
     name: "Nousheen Tahsina Hassan",
     role: "Co-founder & CEO",
     backgroundImage: backgroundTwo,
-    bgImages: " w-[310px] h-[240px]",
+    bgImages: " xl:w-[310px] xl:h-[240px] w-[230px] h-[180px]",
   },
   {
     name: "Partha Saha",
     role: "Co-founder & CTO",
     backgroundImage: backgroundThree,
-    bgImages: " w-[338px] h-[228px]",
+    bgImages: " xl:w-[338px] xl:h-[228px]  w-[260px] h-[180px]",
   },
 ];
 
 export default function Teams() {
   return (
-<div className="py-[48px]">
+<div className="">
 <div className="relative">
       <div className="absolute right-0 w-[280px] h-[535px]" style={{background: `url(${leaderBg}) no-repeat center/cover`}}>
 
       </div>
-      <div className="container px-[20px]">
-        <div className="top-padding ">
+      <div className="container ">
+        <div className="lg:pt-[100px] pt-[60px]">
           <div>
             <h1
               className="text-[36px] text-[#076F74] font-bold text-center"
@@ -57,8 +57,8 @@ export default function Teams() {
             </h1>
           </div>
 
-          <div className="flex justify-center ">
-            <p className="text-[20px] text-[#3C465F] font-poppins font-regular leading-[28px]   pt-[16px] text-start">
+          <div className="flex justify-center px-[20px]">
+            <p className="md:text-[20px] text-[15px] md:text-left  text-center  text-[#3C465F] font-poppins font-regular md:leading-[28px] leading-[21px] pt-[16px] ">
               As co-founders, our dream is not just to build a successful
               company, but to create a meaningful legacy that positively impacts
               the world. We envision a future where our innovations empower
@@ -67,7 +67,7 @@ export default function Teams() {
             </p>
           </div>
 
-          <div className="pt-[64px] xl:px-[120px] lg:px-[0px] px-[60px] container">
+          <div className="pt-[64px] xl:px-[120px] lg:px-[20px] px-[0px] container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {teamMembersData.map((member, index) => (
                 <div key={index}>

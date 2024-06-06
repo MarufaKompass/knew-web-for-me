@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutText() {
   return (
-    <div>
+    <div className="lg:px-[10px] px-[20px]">
       <div>
         <h1
           className="text-[40px] text-[#2B6462] font-medium  leading-[54px] text-center"
@@ -11,36 +11,18 @@ export default function AboutText() {
           ABOUT US
         </h1>
       </div>
-      <div className="pt-[28px]">
+      <div className="pt-[28px] flex justify-center">
         <h1
-          className="md:text-[72px] text-[50px] text-[#181E27] font-regular font  text-center "
+          className="lg:text-[72px] md:text-[45px] text-[30px] text-[#181E27] font-regular font md:leading-[70px]  leading-[40px] text-center  lg:w-[800px]"
           style={{ fontFamily: "Noe Display" }}
         >
-          Our vision is to make work 
-    
-        </h1>
-        <h1
-          className="md:text-[72px] text-[50px]  text-[#181E27] font-regular font  text-center "
-          style={{ fontFamily: "Noe Display" }}
-        >
-          inspiring and fulfilling
-    
+          Our vision is to make work inspiring and fulfilling
         </h1>
       </div>
-      <div className="pt-[24px]">
-        <p
-          className="text-[22px] text-[#3C465F] font-poppins font-medium leading-[36px] text-center "
- 
-        >
-          Kompass Connect, Lobby, and Payroll: Powerful software for
-         
-        </p>
-        <p
-          className="text-[22px] text-[#3C465F] font-poppins font-medium leading-[36px] text-center "
- 
-        >
-          streamlined operations and enhanced productivity.
-         
+      <div className="pt-[24px] flex justify-center">
+        <p className="md:text-[22px] text-[17px] text-[#3C465F] font-poppins font-medium lg:leading-[36px] leading-[26px]  text-center lg:w-[700px] md:w-full">
+          Kompass Connect, Lobby, and Payroll: Powerful software for streamlined
+          operations and enhanced productivity.
         </p>
       </div>
     </div>
