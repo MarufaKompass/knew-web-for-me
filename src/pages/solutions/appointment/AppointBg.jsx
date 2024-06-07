@@ -7,7 +7,7 @@ export default function AppointBg() {
       <div className="bg-[#000]">
         <div className="py-[130px]">
           <div className="container">
-            <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 px-6 h-[40rem]  items-center">
+            <div className="grid md:grid-cols-2 grid-cols-1   px-[30px] lg:h-[40rem] h-[30rem]  items-center gap-4">
               
               <div className="flex h-100 items-center justify-start ">
                 <div className="ml-0 lg:mr-16 lg:text-left">
@@ -20,13 +20,14 @@ export default function AppointBg() {
                 </p>
               </div>
                   <h1
-                    className="text-[#fff] text-[39px] font-regular w-[30rem] leading-[50px] pt-[30px] text-left"
+                    className="text-[#fff] lg:text-[39px] md:text-[32px] text-[23px] font-regular lg:w-[400px] md:w-[350px] w-full md:leading-[50px] leading-[30px] pt-[30px] text-left"
                     style={{ fontFamily: "Noe Display" }}
                   >
-                    Peace of mind for you and everyone who enters At<br></br>
+                    Peace of mind for you 
+                    and everyone who enters At
                     your workplace
                   </h1>
-                  <p className="font-poppins font-normal  text-[14px] text-[#fff] pt-[20px] w-[23rem] text-justify ">
+                  <p className="font-poppins font-normal  text-[14px] text-[#fff] pt-[20px] lg:w-[400px] md:w-[350px] w-full  text-justify ">
                     See exactly who’s visiting, when, and why with a visitor
                     management system that lets you set your own entry criteria.
                     Promote a healthy workplace with a touchless sign-in and

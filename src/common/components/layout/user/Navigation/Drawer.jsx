@@ -82,7 +82,7 @@ const SDrawer = styled.div`
   position: fixed;
   top: 0;
   height: 100%;
-  width: 30%;
+  width: 70%;
   transition: 0.3s ease;
   background: white;
   transform: translateX(${(props) => (props.isOpen ? "0" : "-100%")});

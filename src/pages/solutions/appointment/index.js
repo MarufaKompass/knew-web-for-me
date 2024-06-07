@@ -14,13 +14,13 @@ export default function Appointment() {
   return (
     <div>
       <AppointBg></AppointBg>
-      <AppointBusiness></AppointBusiness>
-      <Organize></Organize>
+     <AppointBusiness></AppointBusiness>
+     {/*   <Organize></Organize>
       <HowItWork></HowItWork>
       <AppointmentEncourages></AppointmentEncourages>
       <SmartWorkplace></SmartWorkplace>
       <AppointVisitor></AppointVisitor>
-      <AppointFreeTrail></AppointFreeTrail>
+      <AppointFreeTrail></AppointFreeTrail> */}
     </div>
   );
 }
