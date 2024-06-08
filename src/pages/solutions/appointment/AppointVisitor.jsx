@@ -14,24 +14,24 @@ export default function AppointVisitor() {
   }, []);
   return (
     <div className="bg-[#FFFDF6]">
-      <div className="py-[100px]">
+      <div className="lg:pt-[100px] pt-[0px] pb-[100px]">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div className="...">
-            <div className="lg:flex hidden">
-            <div
-              className="w-[372px] h-[515px] "
-              style={{ background: `url(${visitorRound}) no-repeat center` }}
-            >
-              <div className="w-[463px] ml-[100px]  lg:flex  hidden">
-                <img src={welcomeKompass} alt="welcomeKompass" />
+            <div className="lg:flex items-center h-full hidden">
+              <div
+                className="w-[372px] h-[515px] "
+                style={{ background: `url(${visitorRound}) no-repeat center` }}
+              >
+                <div className="w-[463px] ml-[100px]  lg:flex  hidden">
+                  <img src={welcomeKompass} alt="welcomeKompass" />
+                </div>
               </div>
-            </div>
             </div>
           </div>
           <div className="col-span-1 ...">
             <div className="px-4">
               <h1
-                className=" text-[40px] font-bold  text-[#071635]  "
+                className=" lg:text-[40px] md:text-[32px] text-[28px] font-bold  text-[#071635]  "
                 style={{ fontFamily: "Noe Display" }}
               >
                 Everything you <span className="text-[#11989F]">need</span> to
@@ -43,7 +43,7 @@ export default function AppointVisitor() {
               </p>
             </div>
 
-            <div className="mr-[160px] pt-[60px]">
+            <div className=" 2xl:mr-[10px] mr-[10px] pt-[60px]">
               <Visitor></Visitor>
             </div>
           </div>

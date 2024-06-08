@@ -16,57 +16,57 @@ export default function Visitor() {
       question: "Easy sign-in",
       answer:
         "Create multiple sign-in flows that ask different questions based on the purpose of the guest’s visit.",
-      image:signIn,
+      image: signIn,
       open: false,
     },
     {
       question: "Visitor screening",
       answer:
-      "Set criteria visitors must meet to come on-site, including proof of vaccination and watch list screening.",
+        "Set criteria visitors must meet to come on-site, including proof of vaccination and watch list screening.",
       open: false,
-      image:screening,
+      image: screening,
     },
-    
+
     {
       question: "Registration",
       answer:
-      "Add upcoming visitors to let your team know who to expect and email guests information about their visit",
+        "Add upcoming visitors to let your team know who to expect and email guests information about their visit",
       open: false,
-      image:registration,
+      image: registration,
     },
     {
       question: "Digital document signing",
       answer:
-      "Prompts guests to sign agreements, like NDAs and waivers, on the iPad during sign in.",
+        "Prompts guests to sign agreements, like NDAs and waivers, on the iPad during sign in.",
       open: false,
-      image:digital,
+      image: digital,
     },
     {
       question: "Analytics and reporting",
       answer:
-      "Get insight into visitor volume, who hosts visitors and more. Export data in a few clicks.",
+        "Get insight into visitor volume, who hosts visitors and more. Export data in a few clicks.",
       open: false,
-      image:analytics,
+      image: analytics,
     },
     {
       question: "Instant notifications",
       answer: "Automatically notify employees when their guests arrive.",
       open: false,
-      image:instant,
+      image: instant,
     },
     {
       question: "Photo capture",
       answer:
-      "Ask guests to take a photo so their host can greet them with confidence.",
+        "Ask guests to take a photo so their host can greet them with confidence.",
       open: false,
-      image:photoCapture,
+      image: photoCapture,
     },
     {
       question: "Badge printing",
       answer:
-      "Automatically print badges when visitors sign in. Even create custom badges.",
+        "Automatically print badges when visitors sign in. Even create custom badges.",
       open: false,
-      image:printing,
+      image: printing,
     },
   ]);
 
@@ -84,29 +84,27 @@ export default function Visitor() {
     );
   };
   return (
-   <div className="grid grid-cols-2 gap-4">
-     <div className="vfaqs">
-     
-       {faqs.slice(0, 4).map((faq, index) => (
-      <ShowingWelcome
-        faq={faq}
-        index={index}
-        key={index}
-        toggleFAQ={toggleFAQ}
-      />
-    ))}
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="vfaqs">
+        {faqs.slice(0, 4).map((faq, index) => (
+          <ShowingWelcome
+            faq={faq}
+            index={index}
+            key={index}
+            toggleFAQ={toggleFAQ}
+          />
+        ))}
+      </div>
+      <div className="vfaqs">
+        {faqs.slice(4, 8).map((faq, index) => (
+          <ShowingWelcome
+            faq={faq}
+            index={index + 4}
+            key={index + 4}
+            toggleFAQ={toggleFAQ}
+          />
+        ))}
+      </div>
     </div>
-    <div className="vfaqs">
-   
-    {faqs.slice(4, 8).map((faq, index) => (
-      <ShowingWelcome
-        faq={faq}
-        index={index + 4} 
-        key={index + 4} 
-        toggleFAQ={toggleFAQ}
-      />
-    ))}
-    </div>
-   </div>
   );
 }

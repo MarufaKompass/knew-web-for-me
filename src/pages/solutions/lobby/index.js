@@ -11,12 +11,12 @@ export default function Lobby() {
   return (
     <div>
       <LobbyBackground></LobbyBackground>
-      <Interface></Interface>
+      {/* <Interface></Interface>
       <LobbyDesigned></LobbyDesigned>
       <LobbyBooking></LobbyBooking>
       <ManageTeam></ManageTeam>
       <Receptionist></Receptionist>
-      <Newsletter />
+      <Newsletter /> */}
     </div>
   );
 }
