@@ -7,11 +7,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 export default function Interface() {
   return (
-    <div className="py-24 px-6">
+    <div className="py-24 ">
       <div className="container">
         <div className="mb-12 ">
           <h1
-            className="font-bold text-center text-[#242424] text-[48px] leading-[55px] pb-4"
+            className="font-bold text-center text-[#242424] lg:text-[48px] text-[35px] leading-[55px] pb-4"
             style={{ fontFamily: "Noe Display" }}
           >
             Everything you <span className="text-[#11989F]">need</span>.
@@ -21,7 +21,7 @@ export default function Interface() {
             During Journey TIme.
           </p>
         </div>
-        <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 px-[100px]">
+        <div className="grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 xl:px-[100px] lg:px-[30px] px-[20px] lg:gap-0 gap-4">
           <div className="bg-[#0C1E21] py-[30px] rounded-l-lg origin-bottom  hover:bg-[#11A8B0]   hover:rounded-t-[15px]    hover:scale-y-110 transition-transform duration-500 ease-in-out hover:z-30">
             <div className="flex justify-center">
               <div className="rounded-full  flex justify-center items-center ">
@@ -75,7 +75,7 @@ export default function Interface() {
             </p>
           </div>
 
-          <div className="bg-[#0C1E21] py-[30px] origin-bottom  hover:bg-[#11A8B0]   hover:rounded-t-[15px]    hover:scale-y-110 transition-transform duration-500 ease-in-out hover:z-30">
+          <div className="bg-[#0C1E21] py-[30px] rounded-r-lg  origin-bottom  hover:bg-[#11A8B0]   hover:rounded-t-[15px]    hover:scale-y-110 transition-transform duration-500 ease-in-out hover:z-30">
             <div className="flex justify-center">
               <div className=" flex justify-center items-center ">
                 <LazyLoadImage effect="opacity" src={analyze} alt="" />
