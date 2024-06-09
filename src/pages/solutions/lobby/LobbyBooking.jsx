@@ -31,7 +31,7 @@ export default function LobbyBooking() {
         </div>
 
         <div>
-          <div className="flex justify-center">
+          <div className="flex justify-center px-[20px]">
             <img src={mobileScreen} alt="mobileScreen" />
           </div>
         </div>
