@@ -143,7 +143,6 @@ const SNavbar = styled.nav`
     transparent ? "transparent" : "transparent"};
   border-bottom: 1px solid rgba(33, 56, 62, 0.1);
   padding: 24px 0px;
-
   position: absolute;
   top: 0;
   width: 100%;

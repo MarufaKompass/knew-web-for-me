@@ -47,7 +47,7 @@ export default function Customer() {
 
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-20 ">
               <div className="flex lg:justify-start justify-center ">
-                <div className="xl:w-[600px] lg:w-[450px] md:w-[570px] w-full box-shadow relative p-[10px]">
+                <div className="xl:w-[600px] lg:w-[450px] md:w-[520px] w-[95%] box-shadow relative p-[10px]">
                   <div className="bg-[#EFF0F4] h-[16px] w-[66px] rounded-r-lg absolute top-[120px] right-[90px]"></div>
                   <div className="bg-[#EFF0F4] h-[16px] w-[66px] rounded-r-lg absolute bottom-[100px] right-[90px]"></div>
                   <div className="bg-[#EFF0F4] h-[16px] w-[124px] rounded-r-lg absolute bottom-[180px] right-[110px]"></div>

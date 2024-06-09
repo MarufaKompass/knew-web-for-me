@@ -4,7 +4,7 @@ import Phone from "../../common/components/svg/store/Phone";
 import Location from "../../common/components/svg/store/Location";
 export default function map() {
   return (
-    <div className="pt-[48]">
+    <div className="lg:pt-[120px] pt-[0px] px-[15px]">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[120px]">
         <div className="rounded-lg">
           <iframe

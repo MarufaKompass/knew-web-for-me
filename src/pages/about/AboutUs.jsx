@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import aboutFounderImg from "../../assets/Nimages/About/founder.png";
 export default function AboutUs() {
   return (
-    <div className="pt-[126px]">
+    <div className="lg:pt-[126px] pt-[80px] px-[20px]">
       <div className="flex flex-col lg:flex-row-reverse ">
         <div className="flex-1 flex justify-center ">
         
@@ -18,12 +18,12 @@ export default function AboutUs() {
         </div>
 
         <div className=" flex-1">
-          <div className="flex justify-center items-center h-[500px]">
+          <div className="flex justify-center items-center lg:pt-[0px] pt-[20px] xl:[0px] lg:pr-[15px] md:pr-[0px]">
           <div >
           
           <div>
          
-            <p className="text-[18px] text-[#3C465F] font-poppins  leading-[28px]  font-regular w-[510px]">
+            <p className="md:text-[18px] text-[16px] text-[#3C465F] font-poppins md:leading-[28px] leading-[22px]   font-regular md:w-[510px] w-full">
             "One Team, Many Talents" embodies Kompass Technologies'
              core principle of collaboration and the diversity of expertise 
              within our team. Success stems from collective efforts, not
@@ -36,7 +36,7 @@ export default function AboutUs() {
 
 
           <div>
-            <p className="text-[18px] text-[#3C465F] font-poppins font-regular leading-[28px]  w-[510px] pt-[24px]">
+            <p className="md:text-[18px] text-[16px] text-[#3C465F] font-poppins font-regular md:leading-[28px] leading-[22px]  w-full md:w-[510px] pt-[24px]">
             "Team Unity, Diverse Strengths" embodies Kompass Technologies'
              principle of collaboration, valuing each member's unique expertise. 
              In our supportive environment, diverse talents unite for innovative 

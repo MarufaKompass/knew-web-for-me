@@ -17,8 +17,8 @@ import "swiper/css/navigation";
 import TrailArrow from "../../common/components/svg/store/TrailArrow";
 import { PricingContext } from "../../context/PricingProvider";
 const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
-
-  const { customizeModal, setCustomizeModal,modalVisible, setModalVisible } = useContext(PricingContext);
+  const { customizeModal, setCustomizeModal, modalVisible, setModalVisible } =
+    useContext(PricingContext);
   let [spinner, setSpinner] = useState(false);
   useEffect(() => {
     setSpinner(true);
@@ -49,32 +49,37 @@ const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
           </div>
         </div> */}
 
- <div className="flex justify-center mb-20">
- <button
-        className={`w-[111px] h-[44px] bg-[${changeToggle ? 'gray' : '#076F74'}] flex justify-center items-center rounded-[22px] cursor-pointer`}
-        onClick={() => setChangeToggle(false)}
-      >
-        <label  className={`text-[14px] ${changeToggle ? 'text-[#404040]' : 'text-[#FFFFFF]'} font-poppins font-regular  cursor-pointer`}>
-          Monthly
-        </label>
-</button>
+        <div className="flex justify-center mb-20">
+          <button
+            className={`w-[111px] h-[44px] bg-[${
+              changeToggle ? "gray" : "#076F74"
+            }] flex justify-center items-center rounded-[22px] cursor-pointer`}
+            onClick={() => setChangeToggle(false)}
+          >
+            <label
+              className={`text-[14px] ${
+                changeToggle ? "text-[#404040]" : "text-[#FFFFFF]"
+              } font-poppins font-regular  cursor-pointer`}
+            >
+              Monthly
+            </label>
+          </button>
 
-      <button
-        className={`w-[111px] h-[44px] bg-[${changeToggle ? '#076F74' : 'gray'}] flex justify-center items-center rounded-[22px] cursor-pointer`}
-        onClick={() => setChangeToggle(true)}
-      >
-        <label className={`text-[14px] ${changeToggle ? 'text-[#FFFFFF]' : 'text-[#404040]'} font-poppins font-regular  cursor-pointer`}>
-          Yearly
-        </label>
-      </button>
-
-     
-    </div>
-
-
-
-
-
+          <button
+            className={`w-[111px] h-[44px] bg-[${
+              changeToggle ? "#076F74" : "gray"
+            }] flex justify-center items-center rounded-[22px] cursor-pointer`}
+            onClick={() => setChangeToggle(true)}
+          >
+            <label
+              className={`text-[14px] ${
+                changeToggle ? "text-[#FFFFFF]" : "text-[#404040]"
+              } font-poppins font-regular  cursor-pointer`}
+            >
+              Yearly
+            </label>
+          </button>
+        </div>
 
         <div>
           {pricingData === null ? (
@@ -99,12 +104,11 @@ const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
                   }}
                   modules={[Navigation, Scrollbar]}
                   breakpoints={{
-                    // when window width is >= 640px
                     640: {
                       slidesPerView: 2,
                       spaceBetween: 10,
                     },
-                    // when window width is >= 768px
+
                     768: {
                       slidesPerView: 2,
                       spaceBetween: 20,
@@ -114,30 +118,29 @@ const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
                       slidesPerView: 3,
                       spaceBetween: 20,
                     },
-                    // when window width is >= 768px
+
                     1550: {
                       width: 1550,
                       slidesPerView: 4,
                       spaceBetween: 30,
                     },
                   }}
-                  // modules={[Pagination]}
                   className="mySwiper"
                 >
                   <div className="container">
-                  <div className="w-full relative">
-                    {pricingData.map((pricingItem, index) => (
-                      <SwiperSlide>
-                        <PricingCard
-                          setModalVisible={setModalVisible}
-                          pricingItem={pricingItem}
-                          key={index}
-                          changeToggle={changeToggle}
-                          setChangeToggle={setChangeToggle}
-                        ></PricingCard>
-                      </SwiperSlide>
-                    ))}
-                  </div>
+                    <div className="w-full relative">
+                      {pricingData.map((pricingItem, index) => (
+                        <SwiperSlide>
+                          <PricingCard
+                            setModalVisible={setModalVisible}
+                            pricingItem={pricingItem}
+                            key={index}
+                            changeToggle={changeToggle}
+                            setChangeToggle={setChangeToggle}
+                          ></PricingCard>
+                        </SwiperSlide>
+                      ))}
+                    </div>
                   </div>
                 </Swiper>
               )}
@@ -147,7 +150,7 @@ const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
       </section>
       {modalVisible ? <ConfirmModal setModalVisible={setModalVisible} /> : null}
 
-      <div className="flex justify-center mt-10 ">
+      <div className="flex justify-center mt-10  ">
         <label
           htmlFor="customize-modal"
           className="btn  bg-[#076F74] rounded-[30px]  px-[60px]  hover:bg-[#076F74]  "
@@ -155,7 +158,7 @@ const PricingShow = ({ pricingData, changeToggle, setChangeToggle }) => {
           {" "}
           <span className="mr-[8px] text-[#fff] font-poppins text-[14px] font-medium ">
             {" "}
-            Customize Your Offer 
+            Customize Your Offer
           </span>
           <TrailArrow></TrailArrow>
         </label>

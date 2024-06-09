@@ -6,10 +6,10 @@ export default function LobbyBooking() {
     <div className="pb-[68px]">
       <div className="container">
         <div>
-          <div className="flex">
-            <div className="border-r-2 my-[60px] ">
+          <div className=" lg:flex px-[30px] block">
+            <div className="lg:border-r-2 border-l-none lg:my-[60px] my-[10px]">
               <h1
-                className="text-[46px] text-[#191919] font-semibold leading-[55px] my-2 mt-8 w-[26rem]"
+                className="lg:text-[46px] md:text-[35px] text-[27px] text-[#191919] font-semibold lg:leading-[55px] leading-[35px] my-2 mt-8 lg:w-[26rem] w-full"
                 style={{ fontFamily: "Noe Display" }}
               >
                 <span className="text-[#076F74]">Kompass</span> Lobby is
@@ -17,7 +17,7 @@ export default function LobbyBooking() {
                 <span className="text-[#076F74]"> For</span> You
               </h1>
             </div>
-            <div className="flex justify-center items-center h-100 px-[80px]">
+            <div className="flex justify-center items-center h-100 lg:px-[80px] px-[0px]">
               <p className=" text-lg text-paragraph-base text-justify pr-6  font-[350] mt-2 ">
                 No more scrambling to find their guests arrive, handwriting name
                 badges, and tracking down signed agreements. Cloud-based

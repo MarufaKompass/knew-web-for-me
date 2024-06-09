@@ -9,7 +9,6 @@ import AppointVisitor from "./AppointVisitor";
 import AppointFreeTrail from "./AppointFreeTrail";
 import HowItWork from "./HowItWork";
 
-
 export default function Appointment() {
   return (
     <div>
@@ -18,9 +17,9 @@ export default function Appointment() {
       <Organize></Organize>
       <HowItWork></HowItWork>
       <AppointmentEncourages></AppointmentEncourages>
-      <SmartWorkplace></SmartWorkplace>
-      <AppointVisitor></AppointVisitor>
-      <AppointFreeTrail></AppointFreeTrail>
+       <SmartWorkplace></SmartWorkplace>
+       <AppointVisitor></AppointVisitor>
+         <AppointFreeTrail></AppointFreeTrail>
     </div>
   );
 }

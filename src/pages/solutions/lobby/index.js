@@ -14,9 +14,9 @@ export default function Lobby() {
       <Interface></Interface>
       <LobbyDesigned></LobbyDesigned>
       <LobbyBooking></LobbyBooking>
-      <ManageTeam></ManageTeam>
-      <Receptionist></Receptionist>
-      <Newsletter />
+      {/* <ManageTeam></ManageTeam> */}
+      {/*  <Receptionist></Receptionist>
+      <Newsletter /> */}
     </div>
   );
 }

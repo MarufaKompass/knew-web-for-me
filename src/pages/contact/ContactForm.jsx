@@ -29,20 +29,19 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="  py-[48px]">
+    <div className=" container px-[10px] pt-[120px]">
       <div className="">
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
+        <div className="grid lg:grid-cols-2  grid-cols-1 gap-4">
           <div className="">
             <h1
-              className="text-[64px] text-[#0C1E21] font-bold pt-[3px]"
+              className="md:text-[64px] text-[40px] text-[#0C1E21] font-bold pt-[3px]"
               style={{ fontFamily: "Noe Display" }}
             >
               Let's talk
             </h1>
-            <p className="text-[20px] text-[#000000] font-regular pt-[13px] pb-[56px]  font-poppins">
-              Have some big idea or brand to develop and need <br></br>help?
-              Then reach out we'd love to hear about your <br></br>project and
-              provide help
+            <p className="md:text-[20px] text-[15px] text-[#000000] font-regular pt-[13px] pb-[56px]  font-poppins md:w-[500px] w-full">
+              Have some big idea or brand to develop and need help? Then reach
+              out we'd love to hear about your project and provide help
             </p>
             <div className="pb-[56px]">
               <p
@@ -80,8 +79,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className="">
-          
+          <div className="lg:pb-[0px] pb-[60px]">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1 gap-4 ">
                 <div className="form-control w-full ">
@@ -166,7 +164,6 @@ export default function ContactForm() {
                     className="textarea input-bordered rounded-none"
                     name="message"
                     rows={7}
-      
                     {...register("message", { required: true })}
                   />
                 </div>

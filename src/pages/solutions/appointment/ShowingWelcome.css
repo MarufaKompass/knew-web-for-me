@@ -1,5 +1,6 @@
 .vfaqs {
   margin: 0 auto;
+  
 }
 
 .vfaqs .vfaq {
@@ -19,6 +20,13 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   width: 100%;
+}
+
+@media (max-width: 425px) {
+  .vfaqs .vfaq .vfaq-question {
+    font-size: 15px; 
+
+  }
 }
 
 .vfaqs .vfaq .vfaq-question::after {
@@ -42,6 +50,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
+@media (max-width: 425px) {
+  .vfaqs .vfaq .vfaq-answer {
+    font-size: 13px; 
+
+  }
+}
+
+
 
 .vfaqs .vfaq.open .vfaq-question {
   margin-bottom: 15px;

@@ -20,7 +20,7 @@ export default function Organize() {
               <div className="container">
                 <div className="lg:px-[30px">
                   <h1
-                    className="font-bold text-[48px]  lg:w-[35rem] w-full text-[#fff] leading-[55px] pb-4 lg:px-[30px] md:px-28 px-[20px]"
+                    className="font-bold lg:text-[48px] md:text-[40px] text-[28px] lg:w-[700px]  w-full text-[#fff] md:leading-[55px] leading-[36px]  pb-4 lg:px-[30px] md:px-28 px-[20px]"
                     style={{ fontFamily: "Noe Display" }}
                   >
                     Appointment solution is designed for organizations like

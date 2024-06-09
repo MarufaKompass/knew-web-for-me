@@ -6,23 +6,18 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 export default function LobbyDesigned() {
   return (
     <div>
-      <div className=" py-24 px-6 ">
+      <div className=" lg:pt-24 pt-0  px-6 ">
         <div className="">
           <div className="flex flex-col lg:flex-row ">
-            <div className="flex-1  flex  justify-center">
-              <LazyLoadImage
-                src={lobbyDesigned}
-                effect="blur"
-                alt=""
-                className="h-full w-fit-content"
-              />
+            <div className="flex-1  md:flex hidden  lg:justify-center justify-start md:pb-[20px] pb-[0px]">
+              <LazyLoadImage src={lobbyDesigned} alt="" />
             </div>
 
-            <div className="flex h-100 items-center justify-start  bg-[#F8F8F8] rounded-l-[10px] flex-1">
+            <div className="flex h-100 items-center justify-start  bg-[#F8F8F8] rounded-l-[10px] flex-1 ">
               <div className="relative">
                 <div className="p-[20px] ">
                   <h1
-                    className="font-bold text-[48px]  text-[#242424] leading-[55px] pb-4 w-[40rem]"
+                    className="font-bold lg:text-[48px] md:text-[35px] text-[28px]   text-[#242424] lg:leading-[55px] leading-[35px] pb-4 lg:w-[650px]  w-full"
                     style={{ fontFamily: "Noe Display" }}
                   >
                     Kompass Lobby{" "}
@@ -30,7 +25,7 @@ export default function LobbyDesigned() {
                     <span className="text-[#11989F]">Designed</span> for You.
                   </h1>
 
-                  <p className="text-[18px] font-regular  text-[#767676] w-[40rem]">
+                  <p className="text-[18px] font-regular  text-[#767676] lg:w-[520px] w-full">
                     See exactly who’s visiting, when, and why with a visitor
                     management system that lets you set your own entry criteria.
                     Promote a healthy workplace with a touchless sign- in and

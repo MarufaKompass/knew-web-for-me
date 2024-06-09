@@ -15,7 +15,7 @@ export default function JoinTeam() {
           <div className="bg-[#0c1e21]  h-[383px] ">
             <div className="absolute bottom-[-137px] left-[-103px] rounded-[40px]">
               <div
-                className="w-[310px] h-[345px]"
+                className="w-[310px] h-[345px] md:flex hidden"
                 style={{
                   background: `url(${joinTeams}) no-repeat center/cover`,
                 }}
@@ -24,7 +24,7 @@ export default function JoinTeam() {
 
             <div className="absolute right-[-103px] bottom-[-137px] ">
               <div
-                className=" w-[310px] h-[345px] "
+                className=" w-[310px] h-[345px] md:flex hidden"
                 style={{
                   background: `url(${joinTeam2}) no-repeat center/cover`,
                 }}
@@ -41,12 +41,12 @@ export default function JoinTeam() {
                     >
                       Join Our Team
                     </h1>
-                    <p className="ml-6  text-[#fff] text-[20px] font-inter  font-normal">
-                      Join our team and be part of a journey <br></br>
+                    <p className=" text-[#fff] md:text-[20px] text-[18px] font-inter font-normal md:w-[380px] w-full">
+                      Join our team and be part of a journey 
                       where innovation meets opportunity.
                     </p>
                     <div className="mt-[20px]">
-                      <button className="bg-[#11989F] text-[#fff] p-[12px] rounded-[30px]">View Open Positions</button>
+                      <button className="bg-[#11989F] text-[#fff] p-[12px] rounded-[30px] z-10">View Open Positions</button>
                     </div>
                   </div>
                 </div>
