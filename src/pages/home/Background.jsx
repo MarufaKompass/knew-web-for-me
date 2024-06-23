@@ -55,27 +55,12 @@ export default function Background() {
                 Kompass App Will ease your daily life activities
               </h1>
 
-              {/* <h1
-                className={text.heading}
-                style={{ fontFamily: "Noe Display" }}
-              >
-                your daily
-              </h1>
-
-              <h1
-                className={text.heading}
-                style={{ fontFamily: "Noe Display" }}
-              >
-                life activities
-              </h1> */}
               <div className="md:pt-[42px] pt-[20px]">
                 <p className={text.size}>
-                  Kompass Connect is an appointment and visitor management  
-                  solution integrated with payroll & HR, which will make your 
+                  Kompass Connect is an appointment and visitor management
+                  solution integrated with payroll & HR, which will make your
                   daily life ease and efficient.
-                  
                 </p>
-             
               </div>
               <div className="pt-[32px] lg:mb-0 mb-6 flex  justify-start ">
                 <div className="lg:mr-4 mr-2">

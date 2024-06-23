@@ -44,7 +44,13 @@ export default function PricingCard({
   const { etype, dxinfo, ename } = pricingItem;
 
   const vbdt = Number(dxinfo.vubdt);
-  const finalVbdt = vbdt.toLocaleString();
+
+  const vbdtFormatted = vbdt.toFixed(2);
+
+  const finalVbdt = Number(vbdtFormatted).toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
 
   /* Calculating the yearly price of the product. */
   let bdtYearlyPrice = getYearlyBdtPrice(dxinfo);
@@ -52,8 +58,11 @@ export default function PricingCard({
   let usdYearlyPrice = getYearlyUsdPrice(dxinfo);
   // discount price
   let bdtYearlyMainPrice = getBdtDiscountedPrice(dxinfo);
-  const bdtYearlyFinalPrice = bdtYearlyMainPrice.toLocaleString();
-
+  const bdtYearlyFinalPrice = bdtYearlyMainPrice.toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+  console.log(bdtYearlyFinalPrice)
   let usdYearlyMainPrice = getUsdDiscountedPrice(dxinfo);
 
   let perUserBamt = getPerUserPriceBdt(dxinfo);
@@ -176,7 +185,7 @@ export default function PricingCard({
                           <>{null}</>
                         )}
                         <span className="text-[#fff] mr-1 text-[36px]">৳</span>
-                        {bdtYearlyFinalPrice}
+                        {bdtYearlyFinalPrice}  
                         <sup className="text-[#fff] pl-[5px] font-poppins font-regular text-[17px]">
                           /year
                         </sup>
@@ -420,9 +429,9 @@ export default function PricingCard({
                         <>
                           {item === "GEO LOCATION" ? (
                             <div className="flex">
-                               <span>
-                                  <BsCircleFill className={price.circle} />
-                                </span>
+                              <span>
+                                <BsCircleFill className={price.circle} />
+                              </span>
                               <div>
                                 <p className={price.points4}>GEO LOCATION*</p>
                               </div>
@@ -442,8 +451,8 @@ export default function PricingCard({
                           ) : item === "SMS NOTIFICATION*" ? (
                             <div className="flex">
                               <span>
-                                  <BsCircleFill className={price.circle} />
-                                </span>
+                                <BsCircleFill className={price.circle} />
+                              </span>
                               <div>
                                 <p className={price.points4}>
                                   SMS NOTIFICATION*
@@ -464,9 +473,9 @@ export default function PricingCard({
                             </div>
                           ) : item === "EMPLOYEE ONBOARDING" ? (
                             <div className="flex">
-                               <span>
-                                  <BsCircleFill className={price.circle} />
-                                </span>
+                              <span>
+                                <BsCircleFill className={price.circle} />
+                              </span>
                               <div>
                                 <p className={price.points4}>
                                   EMPLOYEE ONBOARDING*
@@ -488,7 +497,7 @@ export default function PricingCard({
                           ) : (
                             <div key={index}>
                               <div className="flex">
-                              <span>
+                                <span>
                                   <BsCircleFill className={price.circle} />
                                 </span>
                                 <p className={price.points4}>{item}</p>
